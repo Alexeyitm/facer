@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/alexeyitm/facehook/static/css/main.39b4f64d.css",
-    "main.js": "/alexeyitm/facehook/static/js/main.9d64b8ad.js",
-    "static/js/787.2dfe2702.chunk.js": "/alexeyitm/facehook/static/js/787.2dfe2702.chunk.js",
-    "index.html": "/alexeyitm/facehook/index.html",
-    "main.39b4f64d.css.map": "/alexeyitm/facehook/static/css/main.39b4f64d.css.map",
-    "main.9d64b8ad.js.map": "/alexeyitm/facehook/static/js/main.9d64b8ad.js.map",
-    "787.2dfe2702.chunk.js.map": "/alexeyitm/facehook/static/js/787.2dfe2702.chunk.js.map"
+    "main.css": "/facehook/static/css/main.39b4f64d.css",
+    "main.js": "/facehook/static/js/main.d9c392df.js",
+    "static/js/787.2dfe2702.chunk.js": "/facehook/static/js/787.2dfe2702.chunk.js",
+    "index.html": "/facehook/index.html",
+    "main.39b4f64d.css.map": "/facehook/static/css/main.39b4f64d.css.map",
+    "main.d9c392df.js.map": "/facehook/static/js/main.d9c392df.js.map",
+    "787.2dfe2702.chunk.js.map": "/facehook/static/js/787.2dfe2702.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.39b4f64d.css",
-    "static/js/main.9d64b8ad.js"
+    "static/js/main.d9c392df.js"
   ]
 }
