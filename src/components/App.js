@@ -6,9 +6,11 @@ import Main from './Main/Main.js';
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Nav />
-      <Main />
+      <>
+        <Header />
+        <Nav />
+        <Main />
+      </>
     </div>
   );
 }
