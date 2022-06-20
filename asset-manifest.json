@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Alexeyitm/facehook.git/static/css/main.39b4f64d.css",
+    "main.js": "/Alexeyitm/facehook.git/static/js/main.72beba91.js",
+    "static/js/787.2dfe2702.chunk.js": "/Alexeyitm/facehook.git/static/js/787.2dfe2702.chunk.js",
+    "index.html": "/Alexeyitm/facehook.git/index.html",
+    "main.39b4f64d.css.map": "/Alexeyitm/facehook.git/static/css/main.39b4f64d.css.map",
+    "main.72beba91.js.map": "/Alexeyitm/facehook.git/static/js/main.72beba91.js.map",
+    "787.2dfe2702.chunk.js.map": "/Alexeyitm/facehook.git/static/js/787.2dfe2702.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.39b4f64d.css",
+    "static/js/main.72beba91.js"
+  ]
+}
