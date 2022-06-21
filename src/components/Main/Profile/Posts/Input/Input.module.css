@@ -1,0 +1,10 @@
+.title {
+  margin: 0;
+}
+
+.input {
+  padding: 0;
+  margin-top: 10px;
+  width : 50%;
+  height: 50px;
+}

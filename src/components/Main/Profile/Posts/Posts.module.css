@@ -1,3 +1,4 @@
 .posts {
   width: calc(100% - 20px);
+  margin-top: 10px;
 }
