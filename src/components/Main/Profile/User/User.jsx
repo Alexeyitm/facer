@@ -7,7 +7,12 @@ function User() {
   return (
     <div className={s.user}>
       <Avatar />
-      <Info />
+      <Info
+        name="Alexey Ponomarev" 
+        dataOfBirth="19.10.1996" 
+        city="Magnitogorsk"
+        education="Ural Federal University"
+      />
     </div>
   );
 }
