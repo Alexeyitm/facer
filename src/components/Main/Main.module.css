@@ -1,4 +1,5 @@
 .main {
   grid-area: m;
   background: #FFFFFF;
+  overflow-y: scroll;
 }

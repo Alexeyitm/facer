@@ -7,6 +7,13 @@ function Items() {
     <ul className={s.items}>
       <Item />
       <Item />
+      <Item />
+      <Item />
+      <Item />
+      <Item />
+      <Item />
+      <Item />
+      <Item />
     </ul>
   );
 }
