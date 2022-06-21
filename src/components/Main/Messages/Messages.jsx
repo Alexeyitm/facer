@@ -1,10 +1,9 @@
 import React from 'react';
-import s from './Main.module.css';
-import Messages from './Messages/Messages';
+import s from './Messages.module.css';
 
 function Messages() {
   return (
-    <div className={s.messages}>
+    <div className={s.messages}>Messages
     </div>
   );
 }
