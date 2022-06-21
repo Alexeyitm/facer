@@ -1,4 +1,11 @@
 .header {
   grid-area: h;
   background: #0050B3;
+  display: flex;
+  align-items: center; 
+}
+
+.header__logo {
+  height: 80%;
+  margin-left: 20px;
 }
