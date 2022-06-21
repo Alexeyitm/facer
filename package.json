@@ -1,7 +1,7 @@
 {
   "name": "facehook",
   "version": "0.1.0",
-  "homepage": "https://alexeyitm.github.io/facehook/",
+  "homepage": "https://alexeyitm.github.io/facer/",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
