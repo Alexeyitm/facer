@@ -1,8 +1,8 @@
-# Facehook
+# Facer
 
 ## О проекте:
 
-Facehook - Социальная сеть.
+Facer - Социальная сеть.
 
 ## Стек
 
@@ -26,7 +26,7 @@ Facehook - Социальная сеть.
 ## Как работать с проектом:
 
 1. Клонировать проект:
-   `git clone https://github.com/Alexeyitm/facehook.git`
+   `git clone https://github.com/Alexeyitm/facer.git`
 2. Установить зависимости:
    `npm i`
 3. Запустить dev-server:
@@ -36,7 +36,7 @@ Facehook - Социальная сеть.
 
 ## Посмотреть страницу и макет:
 
-* [Facehook в GitHub Pages](https://alexeyitm.github.io/facehook/)
+* [Facehook в GitHub Pages](https://alexeyitm.github.io/facer/)
 * [Архитектура приложения на Google Slides](https://docs.google.com/presentation/d/1C1S9CoHG4WXQByYmRjfQRFmNkLCSqS4Tx8FsrzMKJ5M/edit#slide=id.p)
 
 ## Что можно улучшить
