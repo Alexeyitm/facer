@@ -20,11 +20,10 @@
 .like {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .heart {
-  margin: 0;
+  margin: 0 5px 0;
   padding: 0;
   border: 0;
   width: 24px;
