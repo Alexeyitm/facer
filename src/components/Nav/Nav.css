@@ -1,4 +1,13 @@
 .Nav {
   grid-area: n;
   background: #E5E5E5;
+  padding: 20px 20px 0;
+}
+
+.Nav__link {
+  margin-bottom: 20px;
+}
+
+.Nav__link:nth-last-child(1) {
+  margin: 40px 0 0;
 }
