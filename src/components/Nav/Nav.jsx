@@ -9,7 +9,7 @@ function Nav() {
         <NavLink className={({ isActive }) => isActive ? s.link_active : s.link} to="/profile">Profile</NavLink>
       </div>
       <div className={s.item}>
-        <NavLink className={({ isActive }) => isActive ? s.link_active : s.link} to="/messages">Messages</NavLink>
+        <NavLink className={({ isActive }) => isActive ? s.link_active : s.link} to="/dialogs">Dialogs</NavLink>
       </div>
       <div className={s.item}>
         <NavLink className={({ isActive }) => isActive ? s.link_active : s.link} to="/news">News</NavLink>

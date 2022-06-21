@@ -1,11 +1,11 @@
 import React from 'react';
-import s from './User.module.css';
+import s from './Consumer.module.css';
 import Avatar from './Avatar/Avatar';
 import Info from './Info/Info';
 
-function User() {
+function Consumer() {
   return (
-    <div className={s.user}>
+    <div className={s.consumer}>
       <Avatar />
       <Info
         name="Alexey Ponomarev" 
@@ -17,4 +17,4 @@ function User() {
   );
 }
 
-export default User;
+export default Consumer;
