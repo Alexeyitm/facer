@@ -1,0 +1,12 @@
+.user {
+  margin-bottom: 30px;
+}
+
+.user:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.link {
+  color: #000000;
+  text-decoration: none;
+}
