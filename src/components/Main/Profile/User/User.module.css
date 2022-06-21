@@ -1,0 +1,5 @@
+.user {
+  width: calc(100% - 20px);
+  display: flex;
+  margin-top: 20px
+}

@@ -4,10 +4,10 @@
   padding: 20px 20px 0;
 }
 
-.nav__link {
+.link {
   margin-bottom: 20px;
 }
 
-.nav__link:nth-last-child(1) {
+.link:nth-last-child(1) {
   margin: 40px 0 0;
 }
