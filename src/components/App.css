@@ -1,4 +1,4 @@
-.App {
+.app {
   max-width: 1440px;
   margin: 0 auto;
   display: grid;
@@ -6,6 +6,6 @@
             "h h"
             "n m";
   grid-template-columns: 200px 1fr;
-  grid-template-rows: 100px calc(100vh - 120px);
+  grid-template-rows: 50px calc(100vh - 70px);
   grid-gap: 20px;           
 }
