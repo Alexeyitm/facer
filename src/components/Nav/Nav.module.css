@@ -8,11 +8,19 @@
   margin-bottom: 20px;
 }
 
+.item:nth-last-child(1) {
+  margin: 40px 0 0;
+}
+
 .link {
   color: #000000;
   text-decoration: none;
+  transition: all .3s linear;
 }
 
-.item:nth-last-child(1) {
-  margin: 40px 0 0;
+.link_active {
+  color: #0050B3;
+  text-decoration: none;
+  margin-left: 5px;
+  transition: all .3s linear;
 }

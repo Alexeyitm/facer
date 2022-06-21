@@ -6,19 +6,19 @@ function Nav() {
   return (
     <nav className={s.nav}>
       <div className={s.item}>
-        <NavLink className={s.link} to="/profile">Profile</NavLink>
+        <NavLink className={({ isActive }) => isActive ? s.link_active : s.link} to="/profile">Profile</NavLink>
       </div>
       <div className={s.item}>
-        <NavLink className={s.link} to="/messages">Messages</NavLink>
+        <NavLink className={({ isActive }) => isActive ? s.link_active : s.link} to="/messages">Messages</NavLink>
       </div>
       <div className={s.item}>
-        <NavLink className={s.link} to="/news">News</NavLink>
+        <NavLink className={({ isActive }) => isActive ? s.link_active : s.link} to="/news">News</NavLink>
       </div>
       <div className={s.item}>
-        <NavLink className={s.link} to="/music">Music</NavLink>
+        <NavLink className={({ isActive }) => isActive ? s.link_active : s.link} to="/music">Music</NavLink>
       </div>
       <div className={s.item}>
-        <NavLink className={s.link} to="/settings">Settings</NavLink>
+        <NavLink className={({ isActive }) => isActive ? s.link_active : s.link} to="/settings">Settings</NavLink>
       </div>
     </nav>
   );
