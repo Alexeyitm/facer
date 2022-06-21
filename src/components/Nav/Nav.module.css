@@ -4,10 +4,15 @@
   padding: 20px 20px 0;
 }
 
-.link {
+.item {
   margin-bottom: 20px;
 }
 
-.link:nth-last-child(1) {
+.link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.item:nth-last-child(1) {
   margin: 40px 0 0;
 }
