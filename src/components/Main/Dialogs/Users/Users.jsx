@@ -3,20 +3,25 @@ import s from './Users.module.css';
 import User from './User/User'
 
 function Users() {
+
+  let users = [
+    {id: 1, name: 'Petya'},
+    {id: 2, name: 'Ivan'},
+    {id: 3, name: 'Kolya'},
+    {id: 4, name: 'Dima'},
+    {id: 5, name: 'Olya'},
+    {id: 6, name: 'Artem'},
+    {id: 7, name: 'Petya'},
+    {id: 8, name: 'Ivan'},
+    {id: 9, name: 'Kolya'},
+    {id: 10, name: 'Dima'},
+    {id: 11, name: 'Olya'},
+    {id: 12, name: 'Artem'},
+  ]
+
   return (
     <ul className={s.users}>
-      <User name="Petya" id="1"/>
-      <User name="Ivan" id="2"/>
-      <User name="Kolya" id="3"/>
-      <User name="Dima" id="4"/>
-      <User name="Olya" id="5"/>
-      <User name="Artem" id="6"/>
-      <User name="Petya" id="7"/>
-      <User name="Ivan" id="8"/>
-      <User name="Kolya" id="9"/>
-      <User name="Dima" id="10"/>
-      <User name="Olya" id="11"/>
-      <User name="Artem" id="12"/>
+      {users.map(user => <User name={user.name} id={user.id} key={user.id}/>)}
     </ul>
   );
 }
