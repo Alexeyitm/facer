@@ -6,7 +6,7 @@ import Main from './Main/Main';
 
 function App({ state }) {
   return (
-    <div className="app">
+    <div className='app'>
       <Header />
       <Nav />
       <Main owner={state.owner} pages={state.pages}/>

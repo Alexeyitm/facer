@@ -4,7 +4,7 @@ import s from './User.module.css';
 
 function User({ name, id }) {
   return (
-    <li className={s.user}><NavLink className={s.link} to={id+""}>{name}</NavLink></li>
+    <li className={s.user}><NavLink className={s.link} to={id+''}>{name}</NavLink></li>
   );
 }
 

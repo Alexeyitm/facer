@@ -11,11 +11,11 @@ function Main({ owner, pages }) {
   return (
     <main className={s.main}>
       <Routes>
-        <Route path="/" element={<Profile owner={owner} posts={pages.profilePage.posts}/>} />
-        <Route path="/dialogs" element={<Dialogs users={pages.dialogsPage.users} messages={pages.dialogsPage.messages}/>} />
-        <Route path="/news" element={<News/>} />
-        <Route path="/music" element={<Music/>} />
-        <Route path="/settings" element={<Settings/>} />
+        <Route path='/' element={<Profile owner={owner} posts={pages.profilePage.posts}/>} />
+        <Route path='/dialogs' element={<Dialogs users={pages.dialogsPage.users} messages={pages.dialogsPage.messages}/>} />
+        <Route path='/news' element={<News/>} />
+        <Route path='/music' element={<Music/>} />
+        <Route path='/settings' element={<Settings/>} />
       </Routes>
     </main>
   );
