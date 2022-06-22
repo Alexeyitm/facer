@@ -4,12 +4,12 @@ import Header from './Header/Header';
 import Nav from './Nav/Nav';
 import Main from './Main/Main';
 
-function App({ posts, users, messages }) {
+function App({ state }) {
   return (
     <div className="app">
       <Header />
       <Nav />
-      <Main posts={posts} users={users} messages={messages}/>
+      <Main state={state}/>
     </div>
   );
 }
