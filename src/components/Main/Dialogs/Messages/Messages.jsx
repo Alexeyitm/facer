@@ -3,19 +3,23 @@ import s from './Messages.module.css';
 import Message from './Message/Message';
 
 function Messages() {
+
+  const messages = [
+    {id: 1, text: 'Hello'},
+    {id: 2, text: 'Hello'},
+    {id: 3, text: 'Hello'},
+    {id: 4, text: 'Hello'},
+    {id: 5, text: 'Hello'},
+    {id: 6, text: 'Hello'},
+    {id: 7, text: 'Hello'},
+    {id: 8, text: 'Hello'},
+    {id: 9, text: 'Hello'},
+    {id: 10, text: 'Hello'}
+  ]
+
   return (
     <ul className={s.messages}>
-      <Message text="Hi!"/>
-      <Message text="Hi!"/>
-      <Message text="no!"/>
-      <Message text="Hi!"/>
-      <Message text="Hi!"/>
-      <Message text="dfsgdfgfh"/>
-      <Message text="Hi!"/>
-      <Message text="Hi!"/>
-      <Message text="13224354657687980"/>
-      <Message text="Hi!"/>
-      <Message text="Hi!"/>
+      {messages.map(message => <Message text={message.text} key={message.id}/>)}
     </ul>
   );
 }

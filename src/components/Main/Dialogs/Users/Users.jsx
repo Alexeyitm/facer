@@ -4,7 +4,7 @@ import User from './User/User'
 
 function Users() {
 
-  let users = [
+  const users = [
     {id: 1, name: 'Petya'},
     {id: 2, name: 'Ivan'},
     {id: 3, name: 'Kolya'},
