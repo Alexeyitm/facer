@@ -5,4 +5,10 @@
   border-right: 3px #0050B3 solid;
   font-size: 24px;
   overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.users::-webkit-scrollbar {
+  display: none;
 }
