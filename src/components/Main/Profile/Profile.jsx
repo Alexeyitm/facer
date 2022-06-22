@@ -4,12 +4,12 @@ import Cover from './Cover/Cover';
 import Consumer from './Consumer/Consumer';
 import Posts from './Posts/Posts';
 
-function Profile() {
+function Profile({ posts }) {
   return (
     <div className={s.profile}>
       <Cover />
       <Consumer />
-      <Posts />
+      <Posts posts={posts}/>
     </div>
   );
 }

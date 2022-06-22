@@ -3,11 +3,11 @@ import s from './Dialogs.module.css';
 import Users from './Users/Users';
 import Messages from './Messages/Messages';
 
-function Dialogs() {
+function Dialogs({ users, messages }) {
   return (
     <div className={s.dialogs}>
-      <Users />
-      <Messages />
+      <Users users={users} />
+      <Messages messages={messages} />
     </div>
   );
 }

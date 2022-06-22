@@ -4,12 +4,12 @@ import Input from './Input/Input';
 import Button from './Button/Button';
 import Items from './Items/Items';
 
-function Posts() {
+function Posts({ posts }) {
   return (
     <div className={s.posts}>
       <Input />
       <Button />
-      <Items />
+      <Items posts={posts}/>
     </div>
   );
 }

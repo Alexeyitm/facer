@@ -7,13 +7,13 @@ import News from './News/News';
 import Music from './Music/Music';
 import Settings from './Settings/Settings';
 
-function Main() {
+function Main({ posts, users, messages }) {
   return (
     <main className={s.main}>
       <Routes>
-        <Route path="/" element={<Profile/>} />
-        <Route path="/profile" element={<Profile/>} />
-        <Route path="/dialogs" element={<Dialogs/>} />
+        <Route path="/" element={<Profile posts={posts}/>} />
+        <Route path="/profile" element={<Profile posts={posts}/>} />
+        <Route path="/dialogs" element={<Dialogs users={users} messages={messages}/>} />
         <Route path="/news" element={<News/>} />
         <Route path="/music" element={<Music/>} />
         <Route path="/settings" element={<Settings/>} />
