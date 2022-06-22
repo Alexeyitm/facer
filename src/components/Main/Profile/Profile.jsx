@@ -7,9 +7,9 @@ import Posts from './Posts/Posts';
 function Profile({ owner, posts }) {
   return (
     <div className={s.profile}>
-      <Cover />
+      <Cover background={owner.background}/>
       <Owner owner={owner}/>
-      <Posts posts={posts}/>
+      <Posts avatar={owner.avatar} posts={posts}/>
     </div>
   );
 }

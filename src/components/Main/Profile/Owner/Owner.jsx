@@ -6,7 +6,7 @@ import Info from './Info/Info';
 function Owner({ owner }) {
   return (
     <div className={s.owner}>
-      <Avatar />
+      <Avatar avatar={owner.avatar}/>
       <Info
         owner={owner}
       />

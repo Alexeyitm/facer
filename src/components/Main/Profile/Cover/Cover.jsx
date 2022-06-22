@@ -1,9 +1,9 @@
 import React from 'react';
 import s from './Cover.module.css';
 
-function Cover() {
+function Cover({ background }) {
   return (
-    <img className={s.cover} src='https://s.mediasole.ru/images/2225/2225322/original.jpg' alt='Лого'/>
+    <img className={s.cover} src={background} alt='Background'/>
   );
 }
 

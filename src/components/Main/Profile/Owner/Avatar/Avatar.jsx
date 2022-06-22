@@ -1,9 +1,9 @@
 import React from 'react';
 import s from './Avatar.module.css';
 
-function Avatar() {
+function Avatar({ avatar }) {
   return (
-    <img className={s.avatar} src='https://upload.wikimedia.org/wikipedia/commons/9/93/Amateur-made_Na%27vi.jpg' alt='Аватар'/>
+    <img className={s.avatar} src={avatar} alt='Avatar'/>
   );
 }
 
