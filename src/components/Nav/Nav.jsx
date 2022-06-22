@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import s from './Nav.module.css';
 import Friends from './Friends/Friends';
 
-function Nav() {
+function Nav({ friends }) {
   return (
     <nav className={s.nav}>
       <div className={s.item}>
@@ -21,7 +21,7 @@ function Nav() {
       <div className={s.item}>
         <NavLink className={({ isActive }) => isActive ? s.link_active : s.link} to='/settings'>Settings</NavLink>
       </div>
-      <Friends />
+      <Friends friends={friends}/>
     </nav>
   );
 }

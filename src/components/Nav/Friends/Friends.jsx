@@ -2,12 +2,14 @@ import React from 'react';
 import s from './Friends.module.css';
 import Friend from './Friend/Friend';
 
-function Friends() {
+function Friends({ friends }) {
   return (
-    <ul className={s.friends}>
+    <div className={s.friends}>
       <h2 className={s.title}>My Friends</h2>
-      <Friend/>
-    </ul>
+      <ul className={s.list}>
+        {friends.map(friend => <Friend avatar={friend.avatar} name={friend.name} key={friend.id}/>)}
+      </ul>
+    </div>
   );
 }
 

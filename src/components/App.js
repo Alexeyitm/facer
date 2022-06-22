@@ -8,7 +8,7 @@ function App({ state }) {
   return (
     <div className='app'>
       <Header />
-      <Nav />
+      <Nav friends={state.owner.friends}/>
       <Main owner={state.owner} pages={state.pages}/>
     </div>
   );
