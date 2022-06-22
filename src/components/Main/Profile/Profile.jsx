@@ -1,14 +1,14 @@
 import React from 'react';
 import s from './Profile.module.css';
 import Cover from './Cover/Cover';
-import Consumer from './Consumer/Consumer';
+import Owner from './Owner/Owner';
 import Posts from './Posts/Posts';
 
-function Profile({ posts }) {
+function Profile({ owner, posts }) {
   return (
     <div className={s.profile}>
       <Cover />
-      <Consumer />
+      <Owner owner={owner}/>
       <Posts posts={posts}/>
     </div>
   );

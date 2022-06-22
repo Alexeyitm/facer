@@ -9,7 +9,7 @@ function App({ state }) {
     <div className="app">
       <Header />
       <Nav />
-      <Main state={state}/>
+      <Main owner={state.owner} pages={state.pages}/>
     </div>
   );
 }
