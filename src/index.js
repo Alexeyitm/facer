@@ -29,15 +29,15 @@ const users = [
 
 const messages = [
   {id: 1, text: 'Hello'},
-  {id: 2, text: 'Hello'},
-  {id: 3, text: 'Hello'},
-  {id: 4, text: 'Hello'},
-  {id: 5, text: 'Hello'},
-  {id: 6, text: 'Hello'},
-  {id: 7, text: 'Hello'},
-  {id: 8, text: 'Hello'},
-  {id: 9, text: 'Hello'},
-  {id: 10, text: 'Hello'}
+  {id: 2, text: 'Yes'},
+  {id: 3, text: 'No'},
+  {id: 4, text: 'Read'},
+  {id: 5, text: 'Sleep'},
+  {id: 6, text: 'Speak'},
+  {id: 7, text: 'crazyyyyyy'},
+  {id: 8, text: 'nothing'},
+  {id: 9, text: 'whats ap'},
+  {id: 10, text: 'nothing else'}
 ]
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
