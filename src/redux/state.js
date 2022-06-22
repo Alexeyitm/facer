@@ -13,7 +13,7 @@ const state = {
     friends: [
       {id: 1, name: 'David', lastName: 'Kvataniya', avatar: 'https://i.postimg.cc/CMRTCgK2/david.jpg'},
       {id: 2, name: 'Dima', lastName: 'Petrov', avatar: 'https://i.postimg.cc/8z8y68FL/dima.jpg'},
-      {id: 3, name: 'Dimych', lastName: 'Nesterov', avatar: 'https://i.postimg.cc/jjxBDV9Z/dimych.jpg'},
+      {id: 3, name: 'Vasya', lastName: 'Nesterov', avatar: 'https://i.postimg.cc/jjxBDV9Z/dimych.jpg'},
       {id: 4, name: 'Ivan', lastName: 'Ivanov', avatar: 'https://i.postimg.cc/sfNH3Gs6/ivan.jpg'},
       {id: 5, name: 'Katya', lastName: 'Fedotova', avatar: 'https://i.postimg.cc/fLgCW1nt/katya.jpg'},
       {id: 6, name: 'Kolya', lastName: 'Sugrey', avatar: 'https://i.postimg.cc/7hFN07Lq/kolya.jpg'},

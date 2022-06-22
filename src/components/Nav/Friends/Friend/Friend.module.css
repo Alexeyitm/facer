@@ -1,5 +1,5 @@
 .friend {
-
+  position: relative;
 }
 
 .avatar {
@@ -9,9 +9,24 @@
   border-radius: 50%;
   object-fit: cover;
   margin: 0 auto;
+  cursor: pointer;
+}
+
+.avatar:hover {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.avatar:hover + .name {
+  display: none;
 }
 
 .name {
+  display: block;
   margin: 0;
   font-size: 16px;
   font-weight: 400;
