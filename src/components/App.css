@@ -3,8 +3,8 @@
   margin: 0 auto;
   display: grid;
   grid-template-areas: 
-            "h h"
-            "n m";
+    "h h"
+    "n m";
   grid-template-columns: 200px 1fr;
   grid-template-rows: 50px calc(100vh - 70px);
   grid-gap: 20px;           
