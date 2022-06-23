@@ -4,9 +4,11 @@ import Message from './Message/Message';
 
 function Messages({ messages }) {
 
+  const messagesElements = messages.map(message => <Message text={message.text} key={message.id}/>)
+
   return (
     <ul className={s.messages}>
-      {messages.map(message => <Message text={message.text} key={message.id}/>)}
+      { messagesElements }
     </ul>
   );
 }
