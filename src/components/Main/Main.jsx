@@ -12,8 +12,16 @@ function Main({ owner, pages, addPost, addMessage }) {
   return (
     <main className={s.main}>
       <Routes>
-        <Route path='/' element={<Profile owner={owner} posts={pages.profilePage.posts} addPost={addPost}/>} />
-        <Route path='/dialogs' element={<Dialogs users={pages.dialogsPage.users} messages={pages.dialogsPage.messages} addMessage={addMessage}/>} />
+        <Route path='/' element={<Profile 
+                                  owner={owner}
+                                  posts={pages.profilePage.posts}
+                                  inputPostValue={pages.profilePage.inputPostValue}
+                                  addPost={addPost}/>} />
+        <Route path='/dialogs' element={<Dialogs 
+                                          users={pages.dialogsPage.users}
+                                          messages={pages.dialogsPage.messages}
+                                          inputMessageValue={pages.dialogsPage.inputMessageValue}
+                                          addMessage={addMessage}/>} />
         <Route path='/news' element={<News/>} />
         <Route path='/music' element={<Music/>} />
         <Route path='/settings' element={<Settings/>} />

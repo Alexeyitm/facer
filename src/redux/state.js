@@ -40,7 +40,8 @@ const state = {
         {id: 9, text: 'Yeezy-Breeze', likeCount: 19},
         {id: 10, text: 'Good mooooorning, Vietnam!', likeCount: 66},
         {id: 11, text: 'Hello, world!', likeCount: 14}
-      ]
+      ],
+      inputPostValue: ''
     },
     dialogsPage: {
       users: [
@@ -68,7 +69,8 @@ const state = {
         {id: 8, text: 'nothing'},
         {id: 9, text: 'whats ap'},
         {id: 10, text: 'nothing else'}
-      ]
+      ],
+      inputMessageValue: ''
     }
   }
 }
