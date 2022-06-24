@@ -5,13 +5,14 @@ import './index.css';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 import state from './redux/state';
+import { addPost, addMessage } from './redux/state';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
     <HashRouter>
-      <App state={state}/>
+      <App state={state} addPost={addPost} addMessage={addMessage}/>
     </HashRouter>
   </React.StrictMode>
 );

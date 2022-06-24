@@ -4,13 +4,13 @@ import Users from './Users/Users';
 import Messages from './Messages/Messages';
 import InputMessage from './InputMessage/InputMessage';
 
-function Dialogs({ users, messages }) {
+function Dialogs({ users, messages, addMessage }) {
   
   return (
     <div className={s.dialogs}>
       <Users users={users} />
       <Messages messages={messages} />
-      <InputMessage />
+      <InputMessage addMessage={addMessage}/>
     </div>
   );
 }

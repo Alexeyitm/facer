@@ -71,4 +71,14 @@ const state = {
   }
 }
 
+export function addPost(inputPostValue) {
+  const post = {id: state.pages.profilePage.posts.length + 1, text: inputPostValue, likeCount: 0}
+  state.pages.profilePage.posts.push(post)
+}
+
+export function addMessage(inputMessageValue) {
+  const message = {id: state.pages.dialogsPage.messages.length + 1, text: inputMessageValue}
+  state.pages.dialogsPage.messages.push(message)
+}
+
 export default state
