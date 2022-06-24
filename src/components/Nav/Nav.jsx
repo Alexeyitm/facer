@@ -4,6 +4,7 @@ import s from './Nav.module.css';
 import Friends from './Friends/Friends';
 
 function Nav({ friends }) {
+  
   return (
     <nav className={s.nav}>
       <div className={s.item}>

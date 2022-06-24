@@ -5,6 +5,7 @@ import Nav from './Nav/Nav';
 import Main from './Main/Main';
 
 function App({ state }) {
+  
   return (
     <div className='app'>
       <Header />

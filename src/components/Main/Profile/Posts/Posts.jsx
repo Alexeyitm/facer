@@ -4,6 +4,7 @@ import Input from './Input/Input';
 import Items from './Items/Items';
 
 function Posts({ avatar, posts }) {
+  
   return (
     <div className={s.posts}>
       <Input />

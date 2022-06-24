@@ -5,6 +5,7 @@ import Messages from './Messages/Messages';
 import Input from './Input/Input';
 
 function Dialogs({ users, messages }) {
+  
   return (
     <div className={s.dialogs}>
       <Users users={users} />

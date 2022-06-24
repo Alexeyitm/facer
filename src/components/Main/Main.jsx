@@ -8,6 +8,7 @@ import Music from './Music/Music';
 import Settings from './Settings/Settings';
 
 function Main({ owner, pages }) {
+  
   return (
     <main className={s.main}>
       <Routes>

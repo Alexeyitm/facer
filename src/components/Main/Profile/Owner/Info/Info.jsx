@@ -2,6 +2,7 @@ import React from 'react';
 import s from './Info.module.css';
 
 function Info({ owner }) {
+  
   return (
     <div className={s.info}>
       <h1 className={s.title}>{owner.name + ' ' + owner.lastName}</h1>

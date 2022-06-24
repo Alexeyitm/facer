@@ -4,6 +4,7 @@ import Avatar from './Avatar/Avatar';
 import Info from './Info/Info';
 
 function Owner({ owner }) {
+  
   return (
     <div className={s.owner}>
       <Avatar avatar={owner.avatar}/>
