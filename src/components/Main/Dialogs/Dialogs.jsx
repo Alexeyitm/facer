@@ -2,7 +2,7 @@ import React from 'react';
 import s from './Dialogs.module.css';
 import Users from './Users/Users';
 import Messages from './Messages/Messages';
-import Input from './Input/Input';
+import InputMessage from './InputMessage/InputMessage';
 
 function Dialogs({ users, messages }) {
   
@@ -10,7 +10,7 @@ function Dialogs({ users, messages }) {
     <div className={s.dialogs}>
       <Users users={users} />
       <Messages messages={messages} />
-      <Input />
+      <InputMessage />
     </div>
   );
 }
