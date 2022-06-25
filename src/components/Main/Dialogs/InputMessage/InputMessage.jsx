@@ -13,7 +13,7 @@ function InputMessage({ newMessageText, addMessage, updateNewMessageText }) {
   return (
     <div className={s.input}>
       <textarea className={s.textarea} ref={inputMessage} value={newMessageText} onChange={onMessageChange}></textarea>
-      <ButtonSendMessage addMessage={addMessage} inputMessage={inputMessage}/>
+      <ButtonSendMessage addMessage={addMessage}/>
     </div>
   );
 }

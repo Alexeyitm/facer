@@ -14,7 +14,7 @@ function InputPost({ newPostText, addPost, updateNewPostText }) {
     <div className={s.input}>
       <h2 className={s.title}>My Posts</h2>
       <textarea className={s.textarea} ref={inputPost} value={newPostText} onChange={onPostChange}></textarea>
-      <ButtonAddPost addPost={addPost} inputPost={inputPost}/>
+      <ButtonAddPost addPost={addPost}/>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './ButtonAddPost.module.css';
 
-function ButtonAddPost({ addPost, inputPost }) {
+function ButtonAddPost({ addPost }) {
 
   const addNewPost = () => {
     addPost();

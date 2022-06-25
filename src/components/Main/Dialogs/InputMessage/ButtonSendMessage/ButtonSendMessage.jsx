@@ -1,11 +1,12 @@
 import React from 'react';
 import s from './ButtonSendMessage.module.css';
 
-function ButtonSendMessage({ addMessage, inputMessage }) {
+function ButtonSendMessage({ addMessage }) {
 
   const addNewMessage = () => {
-    addMessage(inputMessage.current.value);
-    inputMessage.current.value = '';
+    addMessage();
+    //addMessage(inputMessage.current.value);
+    //inputMessage.current.value = '';
   }
   
   return (
