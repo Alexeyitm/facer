@@ -5,8 +5,6 @@ function ButtonSendMessage({ addMessage }) {
 
   const addNewMessage = () => {
     addMessage();
-    //addMessage(inputMessage.current.value);
-    //inputMessage.current.value = '';
   }
   
   return (

@@ -8,7 +8,7 @@ function Nav({ friends }) {
   return (
     <nav className={s.nav}>
       <div className={s.item}>
-        <NavLink className={({ isActive }) => isActive ? s.link_active : s.link} to='/'>Profile</NavLink>
+        <NavLink className={({ isActive }) => isActive ? s.link_active : s.link} to='/profile'>Profile</NavLink>
       </div>
       <div className={s.item}>
         <NavLink className={({ isActive }) => isActive ? s.link_active : s.link} to='/dialogs'>Dialogs</NavLink>

@@ -12,12 +12,6 @@ function Main({ owner, pages, addPost, updateNewPostText, addMessage, updateNewM
   return (
     <main className={s.main}>
       <Routes>
-        <Route path='/' element={<Profile 
-                                  owner={owner}
-                                  posts={pages.profilePage.posts}
-                                  newPostText={pages.profilePage.newPostText}
-                                  addPost={addPost}
-                                  updateNewPostText={updateNewPostText}/>} />
         <Route path='/dialogs' element={<Dialogs 
                                           users={pages.dialogsPage.users}
                                           messages={pages.dialogsPage.messages}
@@ -27,6 +21,14 @@ function Main({ owner, pages, addPost, updateNewPostText, addMessage, updateNewM
         <Route path='/news' element={<News/>} />
         <Route path='/music' element={<Music/>} />
         <Route path='/settings' element={<Settings/>} />
+        <Route path="*" element={<Profile 
+                                  to="/profile"
+                                  replace 
+                                  owner={owner}
+                                  posts={pages.profilePage.posts}
+                                  newPostText={pages.profilePage.newPostText}
+                                  addPost={addPost}
+                                  updateNewPostText={updateNewPostText} />} />
       </Routes>
     </main>
   );
