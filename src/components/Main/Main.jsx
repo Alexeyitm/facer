@@ -15,12 +15,12 @@ function Main({ owner, pages, addPost, addMessage }) {
         <Route path='/' element={<Profile 
                                   owner={owner}
                                   posts={pages.profilePage.posts}
-                                  inputPostValue={pages.profilePage.inputPostValue}
+                                  newPostText={pages.profilePage.newPostText}
                                   addPost={addPost}/>} />
         <Route path='/dialogs' element={<Dialogs 
                                           users={pages.dialogsPage.users}
                                           messages={pages.dialogsPage.messages}
-                                          inputMessageValue={pages.dialogsPage.inputMessageValue}
+                                          newMessageText={pages.dialogsPage.newMessageText}
                                           addMessage={addMessage}/>} />
         <Route path='/news' element={<News/>} />
         <Route path='/music' element={<Music/>} />

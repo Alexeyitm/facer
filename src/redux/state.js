@@ -41,7 +41,7 @@ const state = {
         {id: 10, text: 'Good mooooorning, Vietnam!', likeCount: 66},
         {id: 11, text: 'Hello, world!', likeCount: 14}
       ],
-      inputPostValue: ''
+      newPostText: ''
     },
     dialogsPage: {
       users: [
@@ -70,7 +70,7 @@ const state = {
         {id: 9, text: 'whats ap'},
         {id: 10, text: 'nothing else'}
       ],
-      inputMessageValue: ''
+      newMessageText: ''
     }
   }
 }
