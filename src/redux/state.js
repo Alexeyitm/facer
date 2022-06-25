@@ -78,9 +78,8 @@ const state = {
 export function addPost() {
   const post = {id: state.pages.profilePage.posts.length + 2, text: state.pages.profilePage.newPostText, likeCount: 0}
   state.pages.profilePage.posts.push(post)
-  renderer(state);
   state.pages.profilePage.newPostText = ''
-  
+  renderer(state);
 }
 
 export function updateNewPostText(newText) {
@@ -91,8 +90,8 @@ export function updateNewPostText(newText) {
 export function addMessage() {
   const message = {id: state.pages.dialogsPage.messages.length + 1, text: state.pages.dialogsPage.newMessageText}
   state.pages.dialogsPage.messages.push(message)
-  renderer(state);
   state.pages.dialogsPage.newMessageText ='';
+  renderer(state);
 }
 
 export function updateNewMessageText(newText) {
