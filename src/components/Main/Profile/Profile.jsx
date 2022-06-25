@@ -4,13 +4,19 @@ import Cover from './Cover/Cover';
 import Owner from './Owner/Owner';
 import Posts from './Posts/Posts';
 
-function Profile({ owner, posts, newPostText, addPost }) {
+function Profile({ owner, posts, newPostText, addPost, updateNewPostText }) {
   
   return (
     <div className={s.profile}>
       <Cover background={owner.background}/>
       <Owner owner={owner}/>
-      <Posts avatar={owner.avatar} posts={posts} newPostText={newPostText} addPost={addPost}/>
+      <Posts
+        avatar={owner.avatar}
+        posts={posts}
+        newPostText={newPostText}
+        addPost={addPost}
+        updateNewPostText={updateNewPostText}
+      />
     </div>
   );
 }

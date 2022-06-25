@@ -4,8 +4,7 @@ import s from './ButtonAddPost.module.css';
 function ButtonAddPost({ addPost, inputPost }) {
 
   const addNewPost = () => {
-    addPost(inputPost.current.value);
-    inputPost.current.value = '';
+    addPost();
   }
   
   return (

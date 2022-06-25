@@ -75,17 +75,28 @@ const state = {
   }
 }
 
-export function addPost(inputPostValue) {
-  const post = {id: state.pages.profilePage.posts.length + 1, text: inputPostValue, likeCount: 0}
+export function addPost() {
+  const post = {id: state.pages.profilePage.posts.length + 2, text: state.pages.profilePage.newPostText, likeCount: 0}
   state.pages.profilePage.posts.push(post)
+  renderer(state);
+  state.pages.profilePage.newPostText = ''
+  
+}
 
+export function updateNewPostText(newText) {
+  state.pages.profilePage.newPostText = newText;
   renderer(state);
 }
 
-export function addMessage(inputMessageValue) {
-  const message = {id: state.pages.dialogsPage.messages.length + 1, text: inputMessageValue}
+export function addMessage() {
+  const message = {id: state.pages.dialogsPage.messages.length + 1, text: state.pages.dialogsPage.newMessageText}
   state.pages.dialogsPage.messages.push(message)
+  renderer(state);
+  state.pages.dialogsPage.newMessageText ='';
+}
 
+export function updateNewMessageText(newText) {
+  state.pages.dialogsPage.newMessageText = newText;
   renderer(state);
 }
 

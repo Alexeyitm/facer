@@ -3,15 +3,22 @@ import './App.css';
 import Header from './Header/Header';
 import Nav from './Nav/Nav';
 import Main from './Main/Main';
-import { addMessage } from '../redux/state';
+//import { addMessage } from '../redux/state';
 
-function App({ state, addPost }) {
+function App({ state, updateNewPostText, addPost, updateNewMessageText, addMessage }) {
   
   return (
     <div className='app'>
       <Header />
       <Nav friends={state.owner.friends}/>
-      <Main owner={state.owner} pages={state.pages} addPost={addPost} addMessage={addMessage}/>
+      <Main
+        owner={state.owner}
+        pages={state.pages}
+        addPost={addPost}
+        updateNewPostText={updateNewPostText}
+        addMessage={addMessage}
+        updateNewMessageText={updateNewMessageText}
+      />
     </div>
   );
 }

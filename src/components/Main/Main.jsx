@@ -7,7 +7,7 @@ import News from './News/News';
 import Music from './Music/Music';
 import Settings from './Settings/Settings';
 
-function Main({ owner, pages, addPost, addMessage }) {
+function Main({ owner, pages, addPost, updateNewPostText, addMessage, updateNewMessageText }) {
   
   return (
     <main className={s.main}>
@@ -16,12 +16,14 @@ function Main({ owner, pages, addPost, addMessage }) {
                                   owner={owner}
                                   posts={pages.profilePage.posts}
                                   newPostText={pages.profilePage.newPostText}
-                                  addPost={addPost}/>} />
+                                  addPost={addPost}
+                                  updateNewPostText={updateNewPostText}/>} />
         <Route path='/dialogs' element={<Dialogs 
                                           users={pages.dialogsPage.users}
                                           messages={pages.dialogsPage.messages}
                                           newMessageText={pages.dialogsPage.newMessageText}
-                                          addMessage={addMessage}/>} />
+                                          addMessage={addMessage}
+                                          updateNewMessageText={updateNewMessageText}/>} />
         <Route path='/news' element={<News/>} />
         <Route path='/music' element={<Music/>} />
         <Route path='/settings' element={<Settings/>} />
