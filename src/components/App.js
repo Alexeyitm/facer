@@ -5,7 +5,7 @@ import Nav from './Nav/Nav';
 import Main from './Main/Main';
 //import { addMessage } from '../redux/state';
 
-function App({ state, updateNewPostText, addPost, updateNewMessageText, addMessage }) {
+function App({ state, addPost, updateNewPostText, addMessage, updateNewMessageText }) {
   
   return (
     <div className='app'>
