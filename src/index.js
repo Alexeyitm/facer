@@ -4,7 +4,7 @@ import { HashRouter } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
 import App from './components/App';
-import state, { addPost, updateNewPostText, addMessage, updateNewMessageText, subscribe } from './redux/state';
+import store from './redux/state';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
   
@@ -12,21 +12,21 @@ const renderer = (state) => {
   root.render(
   <React.StrictMode>
     <HashRouter>
-      <App 
+      <App
         state={state}
-        addPost={addPost}
-        updateNewPostText={updateNewPostText}
-        addMessage={addMessage}
-        updateNewMessageText={updateNewMessageText}
+        addPost={store.addPost.bind(store)}
+        updateNewPostText={store.updateNewPostText.bind(store)}
+        addMessage={store.addMessage.bind(store)}
+        updateNewMessageText={store.updateNewMessageText.bind(store)}
       />
     </HashRouter>
   </React.StrictMode>
   );
 }
 
-renderer(state);
+renderer(store.getState());
 
-subscribe(renderer)
+store.subscribe(renderer)
 
 
 reportWebVitals();

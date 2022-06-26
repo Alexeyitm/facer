@@ -4,8 +4,7 @@ import Header from './Header/Header';
 import Nav from './Nav/Nav';
 import Main from './Main/Main';
 
-function App({ state, addPost, updateNewPostText, addMessage, updateNewMessageText }) {
-  
+function App({ state, addPost,updateNewPostText, addMessage, updateNewMessageText }) {
   return (
     <div className='app'>
       <Header />
