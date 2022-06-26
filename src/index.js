@@ -13,7 +13,7 @@ const renderer = (state) => {
   <React.StrictMode>
     <HashRouter>
       <App
-        state={state}
+        state={store.getState()}
         addPost={store.addPost.bind(store)}
         updateNewPostText={store.updateNewPostText.bind(store)}
         addMessage={store.addMessage.bind(store)}
