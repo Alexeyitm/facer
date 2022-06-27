@@ -1,10 +1,11 @@
 import React from 'react';
 import s from './ButtonAddPost.module.css';
+import { addPostActionCreator } from '../../../../../../redux/state';
 
 function ButtonAddPost({ dispatch }) {
 
   const addNewPost = () => {
-    dispatch({type: 'ADD-POST'});
+    dispatch(addPostActionCreator());
   }
   
   return (

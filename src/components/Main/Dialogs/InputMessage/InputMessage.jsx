@@ -1,13 +1,14 @@
 import React from 'react';
 import s from './InputMessage.module.css';
 import ButtonSendMessage from './ButtonSendMessage/ButtonSendMessage'
+import { updateNewMessageTextActionCreator } from '../../../../redux/state';
 
 function InputMessage({ newMessageText, dispatch }) {
 
   const inputMessage = React.createRef();
 
   const onMessageChange = () => {
-    dispatch({type: 'UPDATE-NEW-MESSAGE-TEXT', newText: inputMessage.current.value})
+    dispatch(updateNewMessageTextActionCreator(inputMessage.current.value))
   }
   
   return (

@@ -13,10 +13,6 @@ function App({ state, dispatch }) {
         owner={state.owner}
         pages={state.pages}
         dispatch={dispatch}
-        /*addPost={addPost}
-        updateNewPostText={updateNewPostText}
-        addMessage={addMessage}
-  updateNewMessageText={updateNewMessageText}*/
       />
     </div>
   );

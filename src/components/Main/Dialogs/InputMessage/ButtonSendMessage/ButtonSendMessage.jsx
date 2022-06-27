@@ -1,10 +1,11 @@
 import React from 'react';
 import s from './ButtonSendMessage.module.css';
+import { addMessageActionCreator } from '../../../../../redux/state';
 
 function ButtonSendMessage({ dispatch }) {
 
   const addNewMessage = () => {
-    dispatch({type: 'ADD-MESSAGE'});
+    dispatch(addMessageActionCreator());
   }
   
   return (

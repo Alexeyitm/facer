@@ -1,13 +1,14 @@
 import React from 'react';
 import s from './InputPost.module.css';
 import ButtonAddPost from './ButtonAddPost/ButtonAddPost';
+import { updateNewPostTextActionCreator } from '../../../../../redux/state';
 
 function InputPost({ newPostText, dispatch }) {
 
   const inputPost = React.createRef();
 
   const onPostChange = () => {
-    dispatch({type: 'UPDATE-NEW-POST-TEXT', newText: inputPost.current.value})
+    dispatch(updateNewPostTextActionCreator(inputPost.current.value))
   }
   
   return (
