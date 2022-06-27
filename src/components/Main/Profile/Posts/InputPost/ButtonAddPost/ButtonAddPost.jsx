@@ -1,10 +1,10 @@
 import React from 'react';
 import s from './ButtonAddPost.module.css';
 
-function ButtonAddPost({ addPost }) {
+function ButtonAddPost({ dispatch }) {
 
   const addNewPost = () => {
-    addPost();
+    dispatch({type: 'ADD-POST'});
   }
   
   return (

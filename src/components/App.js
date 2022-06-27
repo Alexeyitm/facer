@@ -4,7 +4,7 @@ import Header from './Header/Header';
 import Nav from './Nav/Nav';
 import Main from './Main/Main';
 
-function App({ state, addPost,updateNewPostText, addMessage, updateNewMessageText }) {
+function App({ state, dispatch }) {
   return (
     <div className='app'>
       <Header />
@@ -12,10 +12,11 @@ function App({ state, addPost,updateNewPostText, addMessage, updateNewMessageTex
       <Main
         owner={state.owner}
         pages={state.pages}
-        addPost={addPost}
+        dispatch={dispatch}
+        /*addPost={addPost}
         updateNewPostText={updateNewPostText}
         addMessage={addMessage}
-        updateNewMessageText={updateNewMessageText}
+  updateNewMessageText={updateNewMessageText}*/
       />
     </div>
   );

@@ -1,10 +1,10 @@
 import React from 'react';
 import s from './ButtonSendMessage.module.css';
 
-function ButtonSendMessage({ addMessage }) {
+function ButtonSendMessage({ dispatch }) {
 
   const addNewMessage = () => {
-    addMessage();
+    dispatch({type: 'ADD-MESSAGE'});
   }
   
   return (

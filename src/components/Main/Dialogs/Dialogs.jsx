@@ -4,7 +4,7 @@ import Users from './Users/Users';
 import Messages from './Messages/Messages';
 import InputMessage from './InputMessage/InputMessage';
 
-function Dialogs({ users, messages, newMessageText, addMessage, updateNewMessageText }) {
+function Dialogs({ users, messages, newMessageText, dispatch }) {
   
   return (
     <div className={s.dialogs}>
@@ -12,8 +12,7 @@ function Dialogs({ users, messages, newMessageText, addMessage, updateNewMessage
       <Messages messages={messages} />
       <InputMessage
         newMessageText={newMessageText}
-        addMessage={addMessage}
-        updateNewMessageText={updateNewMessageText}
+        dispatch={dispatch}
       />
     </div>
   );

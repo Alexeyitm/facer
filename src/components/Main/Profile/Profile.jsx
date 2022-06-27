@@ -4,7 +4,7 @@ import Cover from './Cover/Cover';
 import Owner from './Owner/Owner';
 import Posts from './Posts/Posts';
 
-function Profile({ owner, posts, newPostText, addPost, updateNewPostText }) {
+function Profile({ owner, posts, newPostText, dispatch}) {
   
   return (
     <div className={s.profile}>
@@ -14,8 +14,7 @@ function Profile({ owner, posts, newPostText, addPost, updateNewPostText }) {
         avatar={owner.avatar}
         posts={posts}
         newPostText={newPostText}
-        addPost={addPost}
-        updateNewPostText={updateNewPostText}
+        dispatch={dispatch}
       />
     </div>
   );

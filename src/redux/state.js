@@ -73,35 +73,57 @@ const store = {
       }
     }
   },
-  getState() {
-    return this._state;
-  },
-  addPost() {
-    const post = {id: this._state.pages.profilePage.posts.length + 2, text: this._state.pages.profilePage.newPostText, likeCount: 0}
-    this._state.pages.profilePage.posts.push(post)
-    this._state.pages.profilePage.newPostText='';
-    this._callSubscriber(this._state);
-  },
-  updateNewPostText(newText) {
-    this._state.pages.profilePage.newPostText = newText;
-    this._callSubscriber(this._state);
-  },
-  addMessage() {
-    const message = {id: this._state.pages.dialogsPage.messages.length + 1, text: this._state.pages.dialogsPage.newMessageText}
-    this._state.pages.dialogsPage.messages.push(message)
-    this._state.pages.dialogsPage.newMessageText='';
-    this._callSubscriber(this._state);
-  },
-  updateNewMessageText(newText) {
-    this._state.pages.dialogsPage.newMessageText = newText;
-    this._callSubscriber(this._state);
-  },
   _callSubscriber() {
     console.log('State changed');
   },
   subscribe(observer) {
     this._callSubscriber = observer;
+  },
+  getState() {
+    return this._state;
+  },
+//  addPost() {
+//    const post = {id: this._state.pages.profilePage.posts.length + 2, text: this._state.pages.profilePage.newPostText, likeCount: 0}
+//    this._state.pages.profilePage.posts.push(post)
+//    this._state.pages.profilePage.newPostText='';
+//    this._callSubscriber(this._state);
+//  },
+//  updateNewPostText(newText) {
+//    this._state.pages.profilePage.newPostText = newText;
+//    this._callSubscriber(this._state);
+//  },
+//  addMessage() {
+//    const message = {id: this._state.pages.dialogsPage.messages.length + 1, text: this._state.pages.dialogsPage.newMessageText}
+//    this._state.pages.dialogsPage.messages.push(message)
+//    this._state.pages.dialogsPage.newMessageText='';
+//    this._callSubscriber(this._state);
+//  },
+//  updateNewMessageText(newText) {
+//    this._state.pages.dialogsPage.newMessageText = newText;
+//    this._callSubscriber(this._state);
+//  },
+
+  dispatch(action) {
+    if (action.type === 'ADD-POST') {
+      const post = {id: this._state.pages.profilePage.posts.length + 2, text: this._state.pages.profilePage.newPostText, likeCount: 0}
+      this._state.pages.profilePage.posts.push(post)
+      this._state.pages.profilePage.newPostText='';
+      this._callSubscriber(this._state);
+    } else if (action.type === 'UPDATE-NEW-POST-TEXT') {
+      this._state.pages.profilePage.newPostText = action.newText;
+      this._callSubscriber(this._state);
+    } else if (action.type === 'ADD-MESSAGE') {
+      const message = {id: this._state.pages.dialogsPage.messages.length + 1, text: this._state.pages.dialogsPage.newMessageText}
+      this._state.pages.dialogsPage.messages.push(message)
+      this._state.pages.dialogsPage.newMessageText='';
+      this._callSubscriber(this._state);
+    } else if (action.type === 'UPDATE-NEW-MESSAGE-TEXT') {
+      this._state.pages.dialogsPage.newMessageText = action.newText;
+      this._callSubscriber(this._state);
+    }
   }
 }
+
+
 
 export default store;

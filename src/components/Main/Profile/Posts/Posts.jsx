@@ -3,14 +3,13 @@ import s from './Posts.module.css';
 import InputPost from './InputPost/InputPost';
 import Items from './Items/Items';
 
-function Posts({ avatar, posts, newPostText, addPost, updateNewPostText }) {
+function Posts({ avatar, posts, newPostText, dispatch }) {
   
   return (
     <div className={s.posts}>
       <InputPost 
         newPostText={newPostText}
-        addPost={addPost}
-        updateNewPostText={updateNewPostText}
+        dispatch={dispatch}
       />
       <Items
         avatar={avatar}

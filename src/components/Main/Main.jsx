@@ -7,7 +7,7 @@ import News from './News/News';
 import Music from './Music/Music';
 import Settings from './Settings/Settings';
 
-function Main({ owner, pages, addPost, updateNewPostText, addMessage, updateNewMessageText }) {
+function Main({ owner, pages, dispatch }) {
   
   return (
     <main className={s.main}>
@@ -16,8 +16,7 @@ function Main({ owner, pages, addPost, updateNewPostText, addMessage, updateNewM
                                           users={pages.dialogsPage.users}
                                           messages={pages.dialogsPage.messages}
                                           newMessageText={pages.dialogsPage.newMessageText}
-                                          addMessage={addMessage}
-                                          updateNewMessageText={updateNewMessageText}/>} />
+                                          dispatch={dispatch} />} />
         <Route path='/news' element={<News/>} />
         <Route path='/music' element={<Music/>} />
         <Route path='/settings' element={<Settings/>} />
@@ -27,8 +26,7 @@ function Main({ owner, pages, addPost, updateNewPostText, addMessage, updateNewM
                                   owner={owner}
                                   posts={pages.profilePage.posts}
                                   newPostText={pages.profilePage.newPostText}
-                                  addPost={addPost}
-                                  updateNewPostText={updateNewPostText} />} />
+                                  dispatch={dispatch} />} />
       </Routes>
     </main>
   );

@@ -14,10 +14,11 @@ const renderer = (state) => {
     <HashRouter>
       <App
         state={store.getState()}
-        addPost={store.addPost.bind(store)}
+        dispatch={store.dispatch.bind(store)}
+        /*addPost={store.addPost.bind(store)}
         updateNewPostText={store.updateNewPostText.bind(store)}
         addMessage={store.addMessage.bind(store)}
-        updateNewMessageText={store.updateNewMessageText.bind(store)}
+        updateNewMessageText={store.updateNewMessageText.bind(store)}*/
       />
     </HashRouter>
   </React.StrictMode>
