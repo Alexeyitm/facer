@@ -14,8 +14,15 @@ function InputPost({ newPostText, dispatch }) {
   return (
     <div className={s.input}>
       <h2 className={s.title}>My Posts</h2>
-      <textarea className={s.textarea} ref={inputPost} value={newPostText} onChange={onPostChange}></textarea>
-      <ButtonAddPost dispatch={dispatch}/>
+      <textarea 
+        className={s.textarea}
+        ref={inputPost}
+        onChange={onPostChange}
+        value={newPostText}
+        placeholder={'Enter new post'}
+      >
+      </textarea>
+      <ButtonAddPost dispatch={dispatch} />
     </div>
   );
 }

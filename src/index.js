@@ -22,7 +22,6 @@ const renderer = (state) => {
 }
 
 renderer(store.getState());
-
 store.subscribe(renderer)
 
 

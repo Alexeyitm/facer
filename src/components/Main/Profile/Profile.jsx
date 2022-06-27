@@ -4,7 +4,7 @@ import Cover from './Cover/Cover';
 import Owner from './Owner/Owner';
 import Posts from './Posts/Posts';
 
-function Profile({ owner, posts, newPostText, dispatch}) {
+function Profile({ owner, posts, newPostText, dispatch }) {
   
   return (
     <div className={s.profile}>

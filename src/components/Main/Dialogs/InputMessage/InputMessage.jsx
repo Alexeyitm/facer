@@ -13,7 +13,14 @@ function InputMessage({ newMessageText, dispatch }) {
   
   return (
     <div className={s.input}>
-      <textarea className={s.textarea} ref={inputMessage} value={newMessageText} onChange={onMessageChange}></textarea>
+      <textarea 
+        className={s.textarea}
+        ref={inputMessage}
+        onChange={onMessageChange}
+        value={newMessageText}
+        placeholder={'Enter your message'}
+      >
+      </textarea>
       <ButtonSendMessage dispatch={dispatch}/>
     </div>
   );

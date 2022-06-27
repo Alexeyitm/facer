@@ -12,21 +12,27 @@ function Main({ owner, pages, dispatch }) {
   return (
     <main className={s.main}>
       <Routes>
-        <Route path='/dialogs' element={<Dialogs 
-                                          users={pages.dialogsPage.users}
-                                          messages={pages.dialogsPage.messages}
-                                          newMessageText={pages.dialogsPage.newMessageText}
-                                          dispatch={dispatch} />} />
+        <Route 
+          path='/dialogs' 
+          element={<Dialogs 
+                    users={pages.dialogsPage.users}
+                    messages={pages.dialogsPage.messages}
+                    newMessageText={pages.dialogsPage.newMessageText}
+                    dispatch={dispatch} />}
+        />
         <Route path='/news' element={<News/>} />
         <Route path='/music' element={<Music/>} />
         <Route path='/settings' element={<Settings/>} />
-        <Route path="*" element={<Profile 
-                                  to="/profile"
-                                  replace 
-                                  owner={owner}
-                                  posts={pages.profilePage.posts}
-                                  newPostText={pages.profilePage.newPostText}
-                                  dispatch={dispatch} />} />
+        <Route 
+          path="*"
+          element={<Profile 
+                    to="/profile"
+                    replace 
+                    owner={owner}
+                    posts={pages.profilePage.posts}
+                    newPostText={pages.profilePage.newPostText}
+                    dispatch={dispatch} />}
+        />
       </Routes>
     </main>
   );
