@@ -8,8 +8,8 @@ function Dialogs({ users, messages, newMessageText, dispatch }) {
   
   return (
     <div className={s.dialogs}>
-      <Users users={users}/>
-      <Messages messages={messages}/>
+      <Users users={users} />
+      <Messages messages={messages} />
       <InputMessage
         newMessageText={newMessageText}
         dispatch={dispatch}

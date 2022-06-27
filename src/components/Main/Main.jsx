@@ -18,7 +18,8 @@ function Main({ owner, pages, dispatch }) {
                     users={pages.dialogsPage.users}
                     messages={pages.dialogsPage.messages}
                     newMessageText={pages.dialogsPage.newMessageText}
-                    dispatch={dispatch} />}
+                    dispatch={dispatch} 
+                  />}
         />
         <Route path='/news' element={<News/>} />
         <Route path='/music' element={<Music/>} />
@@ -31,7 +32,8 @@ function Main({ owner, pages, dispatch }) {
                     owner={owner}
                     posts={pages.profilePage.posts}
                     newPostText={pages.profilePage.newPostText}
-                    dispatch={dispatch} />}
+                    dispatch={dispatch}
+                  />}
         />
       </Routes>
     </main>

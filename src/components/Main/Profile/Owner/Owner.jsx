@@ -7,10 +7,8 @@ function Owner({ owner }) {
   
   return (
     <div className={s.owner}>
-      <Avatar avatar={owner.avatar}/>
-      <Info
-        owner={owner}
-      />
+      <Avatar avatar={owner.avatar} />
+      <Info owner={owner} />
     </div>
   );
 }

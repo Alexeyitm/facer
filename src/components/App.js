@@ -5,10 +5,11 @@ import Nav from './Nav/Nav';
 import Main from './Main/Main';
 
 function App({ state, dispatch }) {
+  
   return (
     <div className='app'>
       <Header />
-      <Nav friends={state.owner.friends}/>
+      <Nav friends={state.owner.friends} />
       <Main
         owner={state.owner}
         pages={state.pages}

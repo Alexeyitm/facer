@@ -6,7 +6,11 @@ function Header() {
   
   return (
     <header className={s.header}>
-      <img className={s.logo} src={logo} alt='Logo'/>
+      <img 
+        className={s.logo}
+        src={logo}
+        alt='Logo'
+      />
     </header>
   );
 }
