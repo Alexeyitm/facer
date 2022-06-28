@@ -4,7 +4,7 @@ import { HashRouter } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
 import App from './components/App';
-import store from './redux/state';
+import store from './redux/store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
   

@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './ButtonSendMessage.module.css';
-import { addMessageActionCreator } from '../../../../../redux/state';
+import { addMessageActionCreator } from '../../../../../redux/dialogs-reducer';
 
 function ButtonSendMessage({ dispatch }) {
 

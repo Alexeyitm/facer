@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './InputMessage.module.css';
 import ButtonSendMessage from './ButtonSendMessage/ButtonSendMessage'
-import { updateNewMessageTextActionCreator } from '../../../../redux/state';
+import { updateNewMessageTextActionCreator } from '../../../../redux/dialogs-reducer';
 
 function InputMessage({ newMessageText, dispatch }) {
 

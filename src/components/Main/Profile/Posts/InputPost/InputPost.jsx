@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './InputPost.module.css';
 import ButtonAddPost from './ButtonAddPost/ButtonAddPost';
-import { updateNewPostTextActionCreator } from '../../../../../redux/state';
+import { updateNewPostTextActionCreator } from '../../../../../redux/profile-reducer';
 
 function InputPost({ newPostText, dispatch }) {
 

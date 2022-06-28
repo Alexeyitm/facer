@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './ButtonAddPost.module.css';
-import { addPostActionCreator } from '../../../../../../redux/state';
+import { addPostActionCreator } from '../../../../../../redux/profile-reducer';
 
 function ButtonAddPost({ dispatch }) {
 

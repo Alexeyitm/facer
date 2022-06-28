@@ -1,7 +1,5 @@
-const ADD_POST = 'ADD-POST';
-const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
-const ADD_MESSAGE = 'ADD-MESSAGE';
-const UPDATE_NEW_MESSAGE_TEXT = 'UPDATE-NEW-MESSAGE-TEXT';
+import profileReducer from "./profile-reducer";
+import dialogsReducer from "./dialogs-reducer";
 
 const store = {
   _state: {
@@ -90,30 +88,12 @@ const store = {
   },
 
   dispatch(action) {
-    if (action.type === 'ADD-POST') {
-      const post = {id: this._state.pages.profilePage.posts.length + 2, text: this._state.pages.profilePage.newPostText, likeCount: 0}
-      this._state.pages.profilePage.posts.push(post)
-      this._state.pages.profilePage.newPostText='';
-      this._callSubscriber(this._state);
-    } else if (action.type === 'UPDATE-NEW-POST-TEXT') {
-      this._state.pages.profilePage.newPostText = action.newText;
-      this._callSubscriber(this._state);
-    } else if (action.type === 'ADD-MESSAGE') {
-      const message = {id: this._state.pages.dialogsPage.messages.length + 1, text: this._state.pages.dialogsPage.newMessageText}
-      this._state.pages.dialogsPage.messages.push(message)
-      this._state.pages.dialogsPage.newMessageText='';
-      this._callSubscriber(this._state);
-    } else if (action.type === 'UPDATE-NEW-MESSAGE-TEXT') {
-      this._state.pages.dialogsPage.newMessageText = action.newText;
-      this._callSubscriber(this._state);
-    }
+
+    profileReducer(this._state.pages.profilePage, action);
+    dialogsReducer(this._state.pages.dialogsPage, action);
+
+    this._callSubscriber(this._state);
   }
 }
-
-export const addPostActionCreator = () => ({type: ADD_POST})
-export const updateNewPostTextActionCreator = (text) => ({type: UPDATE_NEW_POST_TEXT, newText: text})
-
-export const addMessageActionCreator = () => ({type: ADD_MESSAGE})
-export const updateNewMessageTextActionCreator = (text) => ({type: UPDATE_NEW_MESSAGE_TEXT, newText: text})
 
 export default store;
