@@ -88,10 +88,8 @@ const store = {
   },
 
   dispatch(action) {
-
     profileReducer(this._state.pages.profilePage, action);
     dialogsReducer(this._state.pages.dialogsPage, action);
-
     this._callSubscriber(this._state);
   }
 }
