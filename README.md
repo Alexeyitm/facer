@@ -36,7 +36,7 @@ Facer - Социальная сеть.
 
 ## Посмотреть страницу и макет:
 
-* [Facer в GitHub Pages](https://alexeyitm.github.io/facer/)
+* [Facer на GitHub Pages](https://alexeyitm.github.io/facer/)
 * [Архитектура приложения на Google Slides](https://docs.google.com/presentation/d/1C1S9CoHG4WXQByYmRjfQRFmNkLCSqS4Tx8FsrzMKJ5M/edit#slide=id.p)
 
 ## Что можно улучшить
