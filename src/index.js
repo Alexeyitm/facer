@@ -4,11 +4,12 @@ import { HashRouter } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
 import App from './components/App';
-import store from './redux/store';
+import store from './redux/redux-store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
   
 const renderer = (state) => {
+  debugger;
   root.render(
   <React.StrictMode>
     <HashRouter>
@@ -22,7 +23,12 @@ const renderer = (state) => {
 }
 
 renderer(store.getState());
-store.subscribe(renderer)
+//store.subscribe(renderer);
+
+store.subscribe(() => {
+  let state = store.getState();
+  renderer(state);
+})
 
 
 reportWebVitals();
